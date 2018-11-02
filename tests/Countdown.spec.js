@@ -1,5 +1,5 @@
 import { render, cleanup } from 'react-testing-library';
-import Countdown from '../src/Countdown';
+import { Countdown } from '../dist';
 import React from 'react';
 
 afterEach(cleanup);
