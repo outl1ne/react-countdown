@@ -45,7 +45,7 @@ export default class Countdown extends React.Component {
           <div className="countdown">
             {!this.shouldHideEmptyDays(segments) &&
               <React.Fragment>
-                <NumberBlock value={segments.days} isLeading /> <Separator />
+                <NumberBlock value={segments.days} isLeading /><Separator />
               </React.Fragment>}
             {!this.shouldHideEmptyHours(segments) &&
               <React.Fragment>
@@ -53,7 +53,6 @@ export default class Countdown extends React.Component {
                   value={segments.hours}
                   isLeading={segments.days === 0}
                 />
-                {' '}
                 <Separator />
               </React.Fragment>}
             <NumberBlock

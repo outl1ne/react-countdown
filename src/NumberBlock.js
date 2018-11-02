@@ -20,8 +20,8 @@ export default class NumberBlock extends React.PureComponent {
       <div className="countdown-number-block" {...rest}>
         {numbers
           .split('')
-          .map(number => (
-            <Number className="countdown-number" value={number} />
+          .map((number, index) => (
+            <Number key={index} className="countdown-number" value={number} />
           ))}
       </div>
     );
