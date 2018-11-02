@@ -10,20 +10,26 @@
   },
   "scripts": {
     "dev:demo": "frontend-scripts dev",
-    "build": "exit 1",
-    "test": "jest"
+    "build": "babel src -d dist --copy-files",
+    "test": "npm run build && jest",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "devDependencies": {
     "@optimistdigital/create-frontend": "^5.1.2",
+    "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "eslint": "^4.19.0",
     "eslint-plugin-flowtype": "^2.46.1",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-react": "^7.7.0",
+    "jest": "^23.6.0",
     "normalize.css": "8.x.x",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "jest": "^23.6.0",
     "react-testing-library": "^5.2.3"
   }
 }
