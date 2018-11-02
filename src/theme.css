@@ -1,0 +1,18 @@
+.countdown {
+  font-size: 48px;
+  white-space: nowrap;
+  font-family: 'Source Code Pro', monospace;
+  display: flex;
+}
+.countdown-number,
+.countdown-separator {
+  width: 1em;
+  text-align: center;
+  display: inline-block;
+}
+.countdown .countdown-number + .countdown-number {
+  margin-left: 0.5em;
+}
+.countdown .countdown-separator {
+  margin: 0 0.5em;
+}
