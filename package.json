@@ -1,5 +1,5 @@
 {
-  "name": "countdown",
+  "name": "@optimistdigital/countdown",
   "version": "0.1.0",
   "private": true,
   "create-frontend": {
