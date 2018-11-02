@@ -1,5 +1,5 @@
 {
-  "name": "@optimistdigital/countdown",
+  "name": "@optimistdigital/react-countdown",
   "version": "0.1.0",
   "create-frontend": {
     "entryPoints": {
