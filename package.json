@@ -1,0 +1,27 @@
+{
+  "name": "countdown",
+  "version": "0.1.0",
+  "private": true,
+  "create-frontend": {
+    "entryPoints": {
+        "app": "demo/js/entry.js"
+    },
+    "htmlPath": "demo/html"
+  },
+  "scripts": {
+    "dev:demo": "frontend-scripts dev",
+    "build": "exit 1",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@optimistdigital/create-frontend": "^5.1.2",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^4.19.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-react": "^7.7.0",
+    "normalize.css": "8.x.x",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
