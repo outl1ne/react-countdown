@@ -20,8 +20,8 @@ function Demo() {
     <BaseCountdown target="2019-11-02T15:33:31.044Z">
       {({ segments, isRunning }) => (
         <div>
-          <span>{segments.days} days,&nbsp;</span>
-          <span>{segments.hours} hours,&nbsp;</span>
+          <span>{segments.days} days, </span>
+          <span>{segments.hours} hours, </span>
           <span>{segments.minutes} minutes</span>
         </div>
       )}
@@ -50,3 +50,7 @@ Props:
 
 - `target` (string) - ISO timestamp that the countdown will count towards.
 - `hideEmptyDays` and `hideEmptyHours` (boolean) - if true, then day/hour segments will only be shown if they start with a non-zero value on first render.
+
+## Styles
+
+We also provide a stylesheet that you can use to give the countdown a basic visual look. You can find this at `@optimistdigital/react-countdown/dist/theme.css`.
