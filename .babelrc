@@ -1,39 +1,24 @@
 {
   "presets": [
-    "react",
+    "@babel/preset-flow",
+    "@babel/preset-react",
     [
-      "env",
+      "@babel/preset-env",
       {
         "modules": false,
         "targets": {
-          "browsers": ["last 2 versions", "> 1%", "Safari >= 8"],
-          "uglify": true
+          "browsers": ["last 2 versions", "> 1%", "Safari >= 8"]
         },
         "useBuiltIns": "entry"
       }
     ]
   ],
   "plugins": [
-    "transform-object-rest-spread",
-    "transform-class-properties",
-    "transform-react-display-name"
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-react-display-name"
   ],
   "env": {
-    "test": { "plugins": ["transform-es2015-modules-commonjs"] },
-    "development": {
-      "plugins": [
-        [
-          "react-transform",
-          {
-            "transforms": [
-              {
-                "transform": "react-transform-catch-errors",
-                "imports": ["react", "redbox-react"]
-              }
-            ]
-          }
-        ]
-      ]
-    }
+    "test": { "plugins": ["@babel/plugin-transform-modules-commonjs"] }
   }
 }
